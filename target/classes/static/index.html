@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equyiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Rooms manager</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/><!--https://maxcdn.bootstrapcdn.-com/bootstrap/3.3.7/css/bootstrap.min.css  -->
+<link rel="stylesheet" type="text/css" href="css/mystyles.css"/>
+
+</head>
+<body ng-app="RoomsManagerApp">
+
+	<!-- View for adding the navigation bar -->
+	<div ui-view="nav"></div>
+	
+	<div class="container conteneur">
+		<!-- Main view for showing all views -->
+		<div ui-view="content"></div>
+	</div>
+	
+	<!-- Including Scripts -->
+	<script type="text/javascript" src="js/angular.min.js"></script><!-- https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js -->
+	<script type="text/javascript" src="js/angular-ui-router.min.js"></script><!-- https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js -->
+	
+	<!-- Including jquery and twitter bootstrap -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	<!--https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	<!-- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js -->
+		
+	<!-- Including the app.js and route.js  -->
+	<script type="text/javascript" src="app/app.js"></script>	
+	<script type="text/javascript" src="app/route.js"></script>	
+		
+	<!-- Including services -->
+	<script type="text/javascript" src="app/services/auth-service.js"></script>	
+	
+	<!-- Including controllers -->
+	<script type="text/javascript" src="app/controllers/nav.js"></script>
+	<script type="text/javascript" src="app/controllers/login.js"></script>
+	<script type="text/javascript" src="app/controllers/users.js"></script>
+	<script type="text/javascript" src="app/controllers/home.js"></script>
+	<script type="text/javascript" src="app/controllers/page-not-found.js"></script>
+	<script type="text/javascript" src="app/controllers/access-denied.js"></script>
+	<script type="text/javascript" src="app/controllers/register.js"></script>	
+</body>
+</html>
